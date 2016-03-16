@@ -20,10 +20,10 @@
 // alert("I hate this!");
 
 
-function defaultName() {
-var nameField = document.getElementById("name_field");
-nameField.value = "Emporor Goatimus";
-}
+// function defaultName() {
+// var nameField = document.getElementById("name_field");
+// nameField.value = "Emporor Goatimus";
+// }
 
 
 function changeState() {
@@ -31,24 +31,44 @@ function changeState() {
   nameField.style.display = "none"
 }
 
+
 function hideButton() {
 var button = document.getElementsByClassName("btn")[6];
 button.style.display = "none"
 }
 
+
+// function hideRow() {
+// var row = document.getElementsByClassName("association container")[4];
+// row.style.display = "none"
+// }
+
+
 function hideRow() {
-var row = document.getElementsByClassName("association container")[4];
-row.style.display = "none"
+var target_table = document.getElementById("grading_table");
+var target_row = target_table.lastElementChild;
+target_row.style.display = "none"
 }
 
+// function showRow() {
+// var row = document.getElementsByClassName("association container")[4];
+// row.style.display = "block";
+// }
+
 function showRow() {
-var row = document.getElementsByClassName("association container")[4];
-row.style.display = "block";
+  var target_table = document.getElementById("grading_table");
+  var target_row = target_table.lastElementChild;
+  target_row.style.display = "block"
 }
 
 function deleteRow() {
-document.getElementsByClassName("destroy")[1];
+var row = document.getElementsByClassName("destroy")[1];
 }
+
+
+
+
+
 
 
 //
