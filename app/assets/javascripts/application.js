@@ -14,3 +14,66 @@
 //= require jquery_ujs
 //= require d3
 //= require_tree .
+
+
+//
+// alert("I hate this!");
+
+
+function defaultName() {
+var nameField = document.getElementById("name_field");
+nameField.value = "Emporor Goatimus";
+}
+
+
+function changeState() {
+  var nameField = document.body.querySelectorAll('*[href="/courses/1/grade_thresholds"]')[5];
+  nameField.style.display = "none"
+}
+
+function hideButton() {
+var button = document.getElementsByClassName("btn")[6];
+button.style.display = "none"
+}
+
+function hideRow() {
+var row = document.getElementsByClassName("association container")[4];
+row.style.display = "none"
+}
+
+function showRow() {
+var row = document.getElementsByClassName("association container")[4];
+row.style.display = "block";
+}
+
+function deleteRow() {
+document.getElementsByClassName("destroy")[1];
+}
+
+
+//
+// function defaultName() {
+// var greenbutton = document.body.querySelectorAll('*[href="/courses/1/grade_thresholds"]')[5];
+// nameField.section.style.display = "none"
+// }
+//
+//
+// function defaultName() {
+// var nameField = document.body.querySelectorAll('*[href="/courses/1/grade_thresholds"]')[5];
+// nameField.section.style.display = "none"
+// }
+
+
+
+
+//
+//
+//
+// document.body.querySelectorAll('/courses/1/grade_thresholds');
+
+
+
+// var nameField = document.getElementByClassName("btn btn-success new-association");
+// nameField.value = "Emporor Goatimus";
+//
+// onclick: "defaultName();"
